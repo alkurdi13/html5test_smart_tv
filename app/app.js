@@ -1,8 +1,13 @@
 //your script here
 'use strict';
-var app = new Orangee.Application();
+var app = new Orangee.Application({
+  enableScroller: function() {
+    this.scroller = new orangee.scroller("#contentwrapper");
+    orangee.log("scroller enabled");
+  },
+});
 
-var InvisibleViewForKeyboard = Orangee.ItemView.extend({
+var KeyEventGhostView = Orangee.ItemView.extend({
   template: false,
   keyEvents: {
     'up': 'onKeyUp',
@@ -10,16 +15,15 @@ var InvisibleViewForKeyboard = Orangee.ItemView.extend({
   },
   onKeyUp: function() {
     orangee.log("onKeyUp");
-    window.scrollBy(0, -100);
+    app.scroller.scrollBy(0, 100);
   },
   onKeyDown: function() {
     orangee.log("onKeyDown");
-    window.scrollBy(0, 100);
+    app.scroller.scrollBy(0, -100);
   },
 });
 
 $(document).ready(function() {
   app.start();
-  new InvisibleViewForKeyboard().render();
+  new KeyEventGhostView().render();
 });
-

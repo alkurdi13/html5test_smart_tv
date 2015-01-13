@@ -55,9 +55,9 @@
 
 
 	<body>
-		<div id='contentwrapper'>
+		<div id='contentwrapper' class="oge-wrapper" style="height:100%;">
 
-			<div class='page'>
+			<div class='page oge-scroller'>
 
 				<div id='loading'><div></div></div>
 
@@ -225,7 +225,9 @@
 						contents.style.visibility = 'visible';
 
 						var loading = document.getElementById('loading');
-						loading.style.display = 'none';
+            loading.style.display = 'none';
+
+            app.enableScroller();
 					}, 100);
 				},
 
