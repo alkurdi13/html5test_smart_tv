@@ -1,39 +1,6 @@
 
 /********************************************
  *
- *   Import fonts
- */
-
-@font-face {
-	font-family: 'html5test';
-	src:url('/fonts/html5test.eot');
-	src:url('/fonts/html5test.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/html5test.woff') format('woff'),
-		url('/fonts/html5test.ttf') format('truetype'),
-		url('/fonts/html5test.svg#html5test') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-    font-family: 'League Gothic';
-    src: url('/fonts/leaguegothic-regular-webfont.eot');
-    src: url('/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-
-
-/********************************************
- *
  *   Basic styles
  *
  *   Background: 	#d9d9d9
@@ -444,7 +411,6 @@ body.indexVisible > div#index button#indexbutton {
 	border-left: 1px solid #ccc;
 
 	display: block;
-	background: url(/images/sponsors/cloudvps.png) no-repeat 10px top;
 	background-size: 59px 43px;
 	padding-top: 0px;
 	padding-left: 80px;
@@ -459,7 +425,6 @@ body.indexVisible > div#index button#indexbutton {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	#cloudvps a {
-		background-image: url(/images/sponsors/cloudvps@2x.png);
 		background-size: 59px 43px;
 	}
 }
@@ -1949,13 +1914,11 @@ body.indexVisible > div#index button#indexbutton {
 	width: 74px;
 	height: 102px;
 	margin: 16px 0 10px 10px;
-	background: url(/images/html5.png);
 	background-size: 74px 102px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 	#html5 {
-		background-image: url(/images/html5@2x.png);
 	}
 }
 
